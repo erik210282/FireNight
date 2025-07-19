@@ -5,38 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Firenight IT Technologies</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .submenu { display: none; position: absolute; background: #1f2937; min-width: 12rem; z-index: 10; }
+    .menu-item:hover .submenu { display: block; }
+  </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-  <header class="p-6 bg-gray-800 shadow-md text-center">
-    <img src="assets/logo.png" alt="Firenight Logo" class="mx-auto mb-4" style="max-width: 300px;">
-    <h1 class="text-3xl font-bold text-orange-400">Firenight IT Technologies</h1>
-    <p class="text-sm text-gray-300">Igniting the future of technology.</p>
-  </header>
 
-  <main class="p-6 space-y-16">
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">About Us</h2>
-      <p>We are a futuristic IT company offering cloud solutions, AI automation, and secure infrastructure deployments for modern businesses.</p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Services</h2>
-      <ul class="list-disc ml-6">
-        <li>Cloud Architecture & Hosting</li>
-        <li>AI Integration</li>
-        <li>Software Development</li>
-        <li>Cybersecurity Solutions</li>
+<header class="bg-gray-800 shadow-md p-6">
+  <div class="flex items-center justify-between">
+    <h1 class="text-2xl font-bold text-orange-400">Firenight IT Technologies</h1>
+    <nav>
+      <ul class="flex space-x-6 relative">
+        <li class="menu-item relative">
+          <a href="#" class="hover:text-orange-400">IT Services</a>
+          <ul class="submenu space-y-2 p-4 rounded">
+            <li><a href="#" class="block hover:text-orange-300">Cloud Infrastructure</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Cybersecurity</a></li>
+            <li><a href="#" class="block hover:text-orange-300">DevOps</a></li>
+          </ul>
+        </li>
+        <li class="menu-item relative">
+          <a href="#" class="hover:text-orange-400">Solutions</a>
+          <ul class="submenu space-y-2 p-4 rounded">
+            <li><a href="#" class="block hover:text-orange-300">AI Integration</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Data Analytics</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Process Automation</a></li>
+          </ul>
+        </li>
+        <li class="menu-item relative">
+          <a href="#" class="hover:text-orange-400">Our Work</a>
+          <ul class="submenu space-y-2 p-4 rounded">
+            <li><a href="#" class="block hover:text-orange-300">Case Studies</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Clients</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="menu-item relative">
+          <a href="#" class="hover:text-orange-400">About</a>
+          <ul class="submenu space-y-2 p-4 rounded">
+            <li><a href="#" class="block hover:text-orange-300">Company</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Team</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Careers</a></li>
+          </ul>
+        </li>
+        <li class="menu-item relative">
+          <a href="#" class="hover:text-orange-400">Contact</a>
+          <ul class="submenu space-y-2 p-4 rounded">
+            <li><a href="#" class="block hover:text-orange-300">Contact Form</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Location</a></li>
+            <li><a href="#" class="block hover:text-orange-300">Support</a></li>
+          </ul>
+        </li>
       </ul>
-    </section>
+    </nav>
+  </div>
+</header>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Contact</h2>
-      <p>Email us at: <a href="mailto:contact@firenight.tech" class="text-orange-300 underline">contact@firenight.tech</a></p>
-    </section>
-  </main>
+<main class="p-10">
+  <h2 class="text-3xl font-bold mb-4">Welcome to Firenight</h2>
+  <p>Explore our IT services, solutions, and projects.</p>
+</main>
 
-  <footer class="p-6 bg-gray-800 text-center text-sm text-gray-400">
-    &copy; 2025 Firenight IT Technologies. All rights reserved.
-  </footer>
+<footer class="p-6 bg-gray-800 text-center text-sm text-gray-400">
+  &copy; 2025 Firenight IT Technologies. All rights reserved.
+</footer>
+
 </body>
 </html>
